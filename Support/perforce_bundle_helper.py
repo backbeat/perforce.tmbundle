@@ -4,7 +4,7 @@ from P4 import P4, P4Exception
 p4 = None
 
 def connect_to_p4():
-	required_environ_keys = ['P4PORT', 'P4USER', 'P4PASSWD', 'P4CLIENT']
+	required_environ_keys = ['P4PORT', 'P4USER', 'P4CLIENT']
 	
 	missing_environ_keys = filter(
 		lambda key: not os.environ.has_key(key),
